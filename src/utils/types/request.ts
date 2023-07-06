@@ -1,12 +1,12 @@
 // CATEGORIA
 
-export type category = {
+export type CategoryProps = {
     id: string;
     img: string;
     name: string;
 }
 
-export type createCategory = {
+export type CreateCategory = {
     img: string;
     name: string;
 }
