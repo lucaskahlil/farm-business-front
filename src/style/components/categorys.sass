@@ -1,0 +1,25 @@
+@use '../variables'
+@use '../mixins'
+
+#category
+    @include mixins.center
+    flex-direction: column
+    justify-content: space-between
+    width: 1090px
+    background-color: variables.$bg-color
+    border-radius: 15px
+    gap: 1rem
+
+    h2
+        width: 100%
+        display: flex
+        padding-left: 15px
+        padding-top: 15px
+        @include mixins.h2-title
+
+
+    .categorys-container
+        width: 100%
+        display: flex
+        justify-content: space-around
+
