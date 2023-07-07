@@ -1,12 +1,12 @@
 // CATEGORIA
 
-export type CategoryProps = {
+export interface CategoryProps {
     id: string;
     img: string;
-    name: string;
+    title: string;
 }
 
-export type CreateCategory = {
+export interface CreateCategory {
     img: string;
     name: string;
 }
