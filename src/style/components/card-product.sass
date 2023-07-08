@@ -1,0 +1,102 @@
+@use '../variables'
+@use '../mixins'
+
+#card-product
+    @include mixins.center
+    flex-direction: column
+    width: 383px
+    border: 1px solid #D0D3CF
+    background: variables.$bg-color
+    border-radius: 15px
+    gap: 10px
+
+    img
+        width: 100%
+        height: 262px
+        border-radius: 15px
+
+    .titulo-cont
+        width: 100%
+        @include mixins.center
+        justify-content: space-between
+        padding: 0 12px 0 12px 
+
+    h3
+        color: variables.$text-color-secondary
+        font-size: 26px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        padding: 0 12px 0 12px 
+
+    .avl-cont
+        width: 100%
+        @include mixins.center
+        justify-content: space-between
+        padding: 0 12px 0 12px
+
+    .qtd-avl
+        color: variables.$text-color-secondary
+        font-size: 10px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        padding-right: 17px
+
+    .stars
+        color: #FFD23B
+        font-size: 18px
+        padding: 0 12px 0 12px  
+
+    .price-cont
+        width: 100%
+        @include mixins.center
+        flex-direction: column
+        justify-content: space-between
+        padding: 0 12px 20px 12px   
+
+    .price-av
+        width: 100%
+        @include mixins.center
+        justify-content: start
+        padding: 0 12px 0 12px
+        gap: 10px
+
+        .price-product
+            color: variables.$text-color-secondary
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+
+    .price-cond
+        color: variables.$text-color
+        font-size: 12px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+
+    .price-ins
+        width: 100%
+        @include mixins.center
+        justify-content: space-between
+        padding: 0 12px 0 12px 
+        color: variables.$text-color
+        font-size: 12px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+
+    .btn-comprar
+        @include mixins.btn-green
+        border: none
+        width: 257px
+        height: 44px
+        
+    .btn-adicionar
+        @include mixins.btn-gray
+        border: none
+        width: 257px
+        height: 44px
+        margin-bottom: 27px
+        
