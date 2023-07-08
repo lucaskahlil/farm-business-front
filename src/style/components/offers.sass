@@ -1,0 +1,23 @@
+@use '../variables'
+@use '../mixins'
+
+#offers
+    @include mixins.center
+    flex-direction: column
+    width: 1090px
+    background: variables.$bg-color
+    border-radius: 15px
+    gap: 1rem
+
+    h2
+        width: 100%
+        display: flex
+        padding-left: 15px
+        padding-top: 15px
+        @include mixins.h2-title
+
+    .offers-cont
+        @include mixins.center
+        gap: 20px
+        width: 100%
+        padding: 0 50px 50px 50px
