@@ -1,4 +1,6 @@
 import '../style/components/card-product.sass'
+import { AiOutlineHeart } from 'react-icons/ai'
+import { PiStarThin } from 'react-icons/pi'
 
 export default function CardProduct() {
     return (
@@ -6,11 +8,19 @@ export default function CardProduct() {
             <img src="https://st2.depositphotos.com/2632165/11804/i/600/depositphotos_118049482-stock-photo-young-plant-in-the-morning.jpg" alt="imagem do produto" />
             <div className='titulo-cont'>
                 <h3>Nome do Produto</h3>
-                <h3>CC</h3>
+                <h3>
+                    < AiOutlineHeart />
+                </h3>
             </div>
             <div className='avl-cont'>
-                <p className='stars'>XXXXX</p>
-                <p className='qtd-avl'>5 Pessoas avaliaram esse produto</p>
+                <p className='stars'>
+                    < PiStarThin />
+                    < PiStarThin />
+                    < PiStarThin />
+                    < PiStarThin />
+                    < PiStarThin />
+                </p>
+                <p className='qtd-avl'>0 Pessoas avaliaram esse produto</p>
             </div>
             <div className='price-cont'>
                 <div className='price-av'>
